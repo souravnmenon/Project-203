@@ -35,7 +35,7 @@ class GUI:
     self.nameLabel.place(x=100, y=100)
     self.nameEntry = Entry(self.login, font="Helvetica 12 bold")
     self.nameEntry.place(x=220, y=100)
-    self.nameEntry.Focus()
+    self.nameEntry.focus()
     
     self.go = Button(
       self.login, 
@@ -79,7 +79,7 @@ class GUI:
 
     self.buttonMessage = Button(self.labelBottom, text="SEND", font="Helvetica 10 bold", width=20, bg="#ABB2B9", command=lambda:self.sendButton(self.entryMsg.get()))
     self.buttonMessage.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
-
+    
   def goAhead(self, name):
     self.login.destroy()
     #self.name = name
