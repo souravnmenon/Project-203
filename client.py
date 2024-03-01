@@ -35,7 +35,8 @@ class GUI:
     self.nameLabel.place(x=100, y=100)
     self.nameEntry = Entry(self.login, font="Helvetica 12 bold")
     self.nameEntry.place(x=220, y=100)
-
+    self.nameEntry.Focus()
+    
     self.go = Button(
       self.login, 
       text="Login", 
